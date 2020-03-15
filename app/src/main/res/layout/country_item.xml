@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:fontFamily="@font/avenir_bold"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="Confirmed"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/confirmed"
+                    android:fontFamily="@font/avenir_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="Recovered"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/recovered"
+                    android:fontFamily="@font/avenir_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="Deaths"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/death"
+                    android:fontFamily="@font/avenir_bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorDeath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
